@@ -1,0 +1,151 @@
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-load {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animation-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-2 {
+  animation-delay: 0.6s;
+}
+
+body.dark-theme {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.dark-theme .jumbotron {
+  background-image: linear-gradient(to bottom right, #2f343a, #212529); 
+  color: #f8f9fa;
+  border-radius: 0.5rem; 
+}
+
+.dark-theme #h1,
+.dark-theme .lead {
+  color: #f8f9fa;
+}
+
+.dark-theme #social-links a {
+  color: #f8f9fa !important;
+  display: inline-block;
+  padding: 0.6rem 0.8rem; 
+  border-radius: 50%;  
+  margin: 0 0.2rem; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.dark-theme #social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.dark-theme #social-links a:hover i {
+  color: #ffc107; 
+}
+
+
+.dark-theme #auto-typed {
+  color: #ffc107;
+}
+
+.dark-theme #theme-toggle-button {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+}
+.dark-theme #theme-toggle-button:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.light-theme {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.light-theme .jumbotron {
+  background-image: linear-gradient(to bottom right, #ffffff, #e9ecef); 
+  color: #212529;
+  border-radius: 0.5rem; 
+}
+
+.light-theme #h1,
+.light-theme .lead {
+  color: #212529;
+}
+
+.light-theme #social-links a {
+  color: #212529 !important;
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.light-theme #social-links a:hover {
+  background-color: rgba(0, 0, 0, 0.07); 
+ color: #007bff 
+}
+
+.light-theme #social-links a:hover i {
+  color: #007bff; 
+}
+
+
+.light-theme #auto-typed {
+  color: #0056b3;
+}
+
+.light-theme #theme-toggle-button {
+  border-color: #212529;
+  color: #212529;
+}
+.light-theme #theme-toggle-button:hover {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.jumbotron img {
+  max-width: 150px;
+}
+
+@media (min-width: 576px) {
+  .jumbotron img {
+    max-width: 200px;
+  }
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+} 
